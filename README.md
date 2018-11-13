@@ -31,12 +31,12 @@
 
 Поддерживаемые модули
 ==================
-- Apache-2.4 (Include HTTP/2 module: [nghttp2](https://github.com/nghttp2/nghttp2), [mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html))
-- Apache Additional Modules: [mod_wsgi](https://github.com/GrahamDumpleton/mod_wsgi), [mod_security](https://github.com/SpiderLabs/ModSecurity), [mod_jk](https://tomcat.apache.org/download-connectors.cgi)
+- Apache-2.4 (Включая модуль HTTP/2: [nghttp2](https://github.com/nghttp2/nghttp2), [mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html))
+- Дополнительные модули Apache: [mod_wsgi](https://github.com/GrahamDumpleton/mod_wsgi), [mod_security](https://github.com/SpiderLabs/ModSecurity), [mod_jk](https://tomcat.apache.org/download-connectors.cgi)
 - MySQL-5.5, MySQL-5.6, MySQL-5.7, MySQL-8.0, MariaDB-5.5, MariaDB-10.0, MariaDB-10.1, MariaDB-10.2, MariaDB-10.3, Percona-Server-5.5, Percona-Server-5.6, Percona-Server-5.7
 - PHP-5.6, PHP-7.0, PHP-7.1, PHP-7.2
-- PHP Additional Modules: opcache, [ionCube Loader](https://www.ioncube.com/loaders.php), [xcache](https://xcache.lighttpd.net/), [imagick](https://pecl.php.net/package/imagick), [gmagick](https://pecl.php.net/package/gmagick), [libsodium](https://github.com/jedisct1/libsodium-php), [memcached](https://github.com/php-memcached-dev/php-memcached), [redis](https://github.com/phpredis/phpredis), [mongodb](https://pecl.php.net/package/mongodb), [swoole](https://github.com/swoole/swoole-src), [xdebug](https://github.com/xdebug/xdebug)
-- Other Software: [ImageMagick](https://github.com/ImageMagick/ImageMagick), [GraphicsMagick](http://www.graphicsmagick.org/), [Memcached](https://github.com/memcached/memcached), [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin), [Redis](https://github.com/antirez/redis), [KodExplorer](https://github.com/kalcaddle/KodExplorer)
+- Дополнительные модули PHP: opcache, [ionCube Loader](https://www.ioncube.com/loaders.php), [xcache](https://xcache.lighttpd.net/), [imagick](https://pecl.php.net/package/imagick), [gmagick](https://pecl.php.net/package/gmagick), [libsodium](https://github.com/jedisct1/libsodium-php), [memcached](https://github.com/php-memcached-dev/php-memcached), [redis](https://github.com/phpredis/phpredis), [mongodb](https://pecl.php.net/package/mongodb), [swoole](https://github.com/swoole/swoole-src), [xdebug](https://github.com/xdebug/xdebug)
+- Прочие модули: [ImageMagick](https://github.com/ImageMagick/ImageMagick), [GraphicsMagick](http://www.graphicsmagick.org/), [Memcached](https://github.com/memcached/memcached), [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin), [Redis](https://github.com/antirez/redis), [KodExplorer](https://github.com/kalcaddle/KodExplorer)
 
 Установка
 ============
@@ -74,12 +74,12 @@ git pull                 // Get latest version
 
 Резервное копирование
 ======
-- You must modify the config before run it
-- Backup MySQL/MariaDB/Percona datebases, files and directories
-- Backup file is encrypted with AES256-cbc with SHA1 message-digest (option)
-- Auto transfer backup file to Google Drive (need install [gdrive](https://teddysun.com/469.html) command) (option)
-- Auto transfer backup file to FTP server (option)
-- Auto delete Google Drive's or FTP server's remote file (option)
+- Требуется изменить конфигурацию перед запуском
+- Резервное копирование БД MySQL/MariaDB/Percona, файлов и каталогов
+- Backup file is encrypted with AES256-cbc with SHA1 message-digest (опционально)
+- Отправка резервных копий в Google Drive (требуется установить команду [gdrive](https://teddysun.com/469.html)) (опционально)
+- Отправка резервных копий на FTP сервер (опционально)
+- Автоматическое удаление устаревших файлов с Google Drive или FTP сервера (опционально)
 
 ```bash
 ./backup.sh
@@ -93,7 +93,7 @@ git pull                 // Get latest version
 
 Расположение модулей в системе
 ================
-| Apache Location            | Path                                           |
+| Расположение Apache        | Путь                                           |
 |----------------------------|------------------------------------------------|
 | Install Prefix             | /usr/local/apache                              |
 | Web root location          | /data/www/default                              |
@@ -103,33 +103,33 @@ git pull                 // Get latest version
 | Virtual Host log location  | /data/wwwlog/virtual_host_names                |
 | Virtual Host conf          | /usr/local/apache/conf/vhost/virtual_host.conf |
 
-| phpMyAdmin Location        | Path                                           |
+| Расположение phpMyAdmin    | Путь                                           |
 |----------------------------|------------------------------------------------|
 | Installation location      | /data/www/default/phpmyadmin                   |
 
-| KodExplorer Location       | Path                                           |
+| Расположение KodExplorer   | Путь                                           |
 |----------------------------|------------------------------------------------|
 | Installation location      | /data/www/default/kod                          |
 
-| PHP Location               | Path                                           |
+| Расположение PHP           | Путь                                           |
 |----------------------------|------------------------------------------------|
 | Install Prefix             | /usr/local/php                                 |
 | Configuration File         | /usr/local/php/etc/php.ini                     |
 | ini additional location    | /usr/local/php/php.d                           |
 
-| MySQL Location             | Path                                           |
+| Расположение MySQL         | Путь                                           |
 |----------------------------|------------------------------------------------|
 | Install Prefix             | /usr/local/mysql                               |
 | Data Location              | /usr/local/mysql/data                          |
 | my.cnf Configuration File  | /etc/my.cnf                                    |
 
-| MariaDB Location           | Path                                           |
+| Расположение MariaDB       | Путь                                           |
 |----------------------------|------------------------------------------------|
 | Install Prefix             | /usr/local/mariadb                             |
 | Data Location              | /usr/local/mariadb/data                        |
 | my.cnf Configuration File  | /etc/my.cnf                                    |
 
-| Percona Location           | Path                                           |
+| Расположение Percona       | Путь                                           |
 |----------------------------|------------------------------------------------|
 | Install Prefix             | /usr/local/percona                             |
 | Data Location              | /usr/local/percona/data                        |
@@ -137,7 +137,7 @@ git pull                 // Get latest version
 
 Управление модулями
 ==================
-| Process     | Command                                                 |
+| Модули      | Команды                                                 |
 |-------------|---------------------------------------------------------|
 | Apache      | /etc/init.d/httpd  (start\|stop\|status\|restart)       |
 | MySQL       | /etc/init.d/mysqld (start\|stop\|status\|restart)       |
@@ -148,7 +148,7 @@ git pull                 // Get latest version
 
 Команды lamp
 ============
-| Command    | Description                     |
+| Команды    | Описание                        |
 |------------|---------------------------------|
 | lamp add   | create a virtual host           |
 | lamp list  | list all virtual host           |
@@ -156,9 +156,9 @@ git pull                 // Get latest version
 
 Ошибки & Проблемы
 =============
-Please feel free to report any bugs or issues to us, email to: i@teddysun.com or [open issues](https://github.com/teddysun/lamp/issues) on Github.
+Пожалуйста, сообщите нам о любых ошибках или проблемах по электронной почте: ferganets@gmail.com or [open issues](https://github.com/teddysun/lamp/issues) on Github.
 
-Поддержка: https://lamp.sh/support.html
+Поддержка (на Китайском): https://lamp.sh/support.html
 
 Лицензия
 =======
