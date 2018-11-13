@@ -1,20 +1,20 @@
 ![LAMP](https://github.com/teddysun/lamp/raw/master/conf/lamp.png)
 
-Description
+Описание
 ===========
 [LAMP](https://lamp.sh/) является мощным скриптом bash для установки Apache + PHP + MySQL / MariaDB / Percona Server и др. доп. приложений, разработанным китайским программистом [Teddysun](https://teddysun.com/). Вы можете установить Apache + PHP + MySQL / MariaDB / Percona Server очень просто, просто нужно выбрать, что вы хотите установить перед установкой. И все будет установленно автоматически за несколько минут.
 
-- [Поддерживаемые системы](#supported-system)
-- [Supported Software](#supported-software)
-- [Установка](#installation)
-- [Обновление](#upgrade)
-- [Резервное копирование](#backup)
-- [Удаление](#uninstall)
-- [Расположение](#default-location)
-- [Управление](#process-management)
-- [Команды lamp](#lamp-command)
-- [Ошибки & Проблемы](#bugs--issues)
-- [Лицензия](#license)
+- [Поддерживаемые системы](#поддерживаемые-системы)
+- [Поддерживаемые модули](#поддерживаемые-модули)
+- [Установка](#установка)
+- [Обновление](#обновление)
+- [Резервное копирование](#резервное-копирование)
+- [Удаление](#удаление)
+- [Расположение модулей в системе](#расположение-модулей-в-системе)
+- [Управление модулями](#управление-модулями)
+- [Команды lamp](#команды-lamp)
+- [Ошибки & Проблемы](#ошибки--проблемы)
+- [Лицензия](#лицензия)
 
 Поддерживаемые системы
 ===============
@@ -29,7 +29,7 @@ Description
 - Debian-8.x
 - Debian-9.x (рекоммендовано)
 
-Supported Software
+Поддерживаемые модули
 ==================
 - Apache-2.4 (Include HTTP/2 module: [nghttp2](https://github.com/nghttp2/nghttp2), [mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html))
 - Apache Additional Modules: [mod_wsgi](https://github.com/GrahamDumpleton/mod_wsgi), [mod_security](https://github.com/SpiderLabs/ModSecurity), [mod_jk](https://tomcat.apache.org/download-connectors.cgi)
