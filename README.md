@@ -4,19 +4,19 @@ Description
 ===========
 [LAMP](https://lamp.sh/) является мощным скриптом bash для установки Apache + PHP + MySQL / MariaDB / Percona Server и др. доп. приложений, разработанным китайским программистом [Teddysun](https://teddysun.com/). Вы можете установить Apache + PHP + MySQL / MariaDB / Percona Server очень просто, просто нужно выбрать, что вы хотите установить перед установкой. И все будет установленно автоматически за несколько минут.
 
-- [Supported System](#supported-system)
+- [Поддерживаемые системы](#supported-system)
 - [Supported Software](#supported-software)
-- [Installation](#installation)
-- [Upgrade](#upgrade)
-- [Backup](#backup)
-- [Uninstall](#uninstall)
-- [Default Location](#default-location)
-- [Process Management](#process-management)
-- [lamp command](#lamp-command)
-- [Bugs & Issues](#bugs--issues)
-- [License](#license)
+- [Установка](#installation)
+- [Обновление](#upgrade)
+- [Резервное копирование](#backup)
+- [Удаление](#uninstall)
+- [Расположение](#default-location)
+- [Управление](#process-management)
+- [Команды lamp](#lamp-command)
+- [Ошибки & Проблемы](#bugs--issues)
+- [Лицензия](#license)
 
-Supported System
+Поддерживаемые системы
 ===============
 - CentOS-6.x
 - CentOS-7.x (рекоммендовано)
@@ -38,9 +38,9 @@ Supported Software
 - PHP Additional Modules: opcache, [ionCube Loader](https://www.ioncube.com/loaders.php), [xcache](https://xcache.lighttpd.net/), [imagick](https://pecl.php.net/package/imagick), [gmagick](https://pecl.php.net/package/gmagick), [libsodium](https://github.com/jedisct1/libsodium-php), [memcached](https://github.com/php-memcached-dev/php-memcached), [redis](https://github.com/phpredis/phpredis), [mongodb](https://pecl.php.net/package/mongodb), [swoole](https://github.com/swoole/swoole-src), [xdebug](https://github.com/xdebug/xdebug)
 - Other Software: [ImageMagick](https://github.com/ImageMagick/ImageMagick), [GraphicsMagick](http://www.graphicsmagick.org/), [Memcached](https://github.com/memcached/memcached), [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin), [Redis](https://github.com/antirez/redis), [KodExplorer](https://github.com/kalcaddle/KodExplorer)
 
-Installation
+Установка
 ============
-- If your server system: CentOS
+- Еслу ваша операционная система: CentOS
 ```bash
 yum -y install wget screen git
 git clone https://github.com/teddysun/lamp.git
@@ -50,7 +50,7 @@ screen -S lamp
 ./lamp.sh
 ```
 
-- If your server system: Debian/Ubuntu
+- Еслу ваша операционная система: Debian/Ubuntu
 ```bash
 apt-get -y install wget screen git
 git clone https://github.com/teddysun/lamp.git
@@ -60,7 +60,7 @@ screen -S lamp
 ./lamp.sh
 ```
 
-Upgrade
+Обновление
 =======
 ```bash
 git pull                 // Get latest version
@@ -72,7 +72,7 @@ git pull                 // Get latest version
 ./upgrade.sh phpmyadmin  // Upgrade phpMyAdmin
 ```
 
-Backup
+Резервное копирование
 ======
 - You must modify the config before run it
 - Backup MySQL/MariaDB/Percona datebases, files and directories
@@ -85,13 +85,13 @@ Backup
 ./backup.sh
 ```
 
-Uninstall
+Удаление
 =========
 ```bash
 ./uninstall.sh
 ```
 
-Default Location
+Расположение модулей в системе
 ================
 | Apache Location            | Path                                           |
 |----------------------------|------------------------------------------------|
@@ -135,7 +135,7 @@ Default Location
 | Data Location              | /usr/local/percona/data                        |
 | my.cnf Configuration File  | /etc/my.cnf                                    |
 
-Process Management
+Управление модулями
 ==================
 | Process     | Command                                                 |
 |-------------|---------------------------------------------------------|
@@ -146,7 +146,7 @@ Process Management
 | Memcached   | /etc/init.d/memcached (start\|stop\|restart)            |
 | Redis-Server| /etc/init.d/redis-server (start\|stop\|restart)         |
 
-lamp Command
+Команды lamp
 ============
 | Command    | Description                     |
 |------------|---------------------------------|
@@ -154,13 +154,13 @@ lamp Command
 | lamp list  | list all virtual host           |
 | lamp del   | remove a virtual host           |
 
-Bugs & Issues
+Ошибки & Проблемы
 =============
 Please feel free to report any bugs or issues to us, email to: i@teddysun.com or [open issues](https://github.com/teddysun/lamp/issues) on Github.
 
-Support(Chinese): https://lamp.sh/support.html
+Поддержка: https://lamp.sh/support.html
 
-License
+Лицензия
 =======
 Copyright (C) 2013 - 2018 Teddysun
 
