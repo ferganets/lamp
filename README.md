@@ -77,7 +77,7 @@ git pull                 // Get latest version
 - Требуется изменить конфигурацию перед запуском
 - Резервное копирование БД MySQL/MariaDB/Percona, файлов и каталогов
 - Backup file is encrypted with AES256-cbc with SHA1 message-digest (опционально)
-- Отправка резервных копий в Google Drive (требуется установить команду [gdrive](https://teddysun.com/469.html)) (опционально)
+- Отправка резервных копий в Google Drive (требуется выполнить команду [gdrive](https://teddysun.com/469.html)) (опционально)
 - Отправка резервных копий на FTP сервер (опционально)
 - Автоматическое удаление устаревших файлов с Google Drive или FTP сервера (опционально)
 
